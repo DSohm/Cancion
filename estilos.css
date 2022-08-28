@@ -1,4 +1,4 @@
-*{body, html {
+*body, html {
     height: 100%;
 }
 
@@ -110,13 +110,4 @@ button{
     position: absolute;
     padding: 0.55em;
     border-radius: 20 px;
-}
-}
-
-#yesBtn{
-    transform: translate(-100%,0);
-}
-
-#noBtn{
-    position: absolute;
 }

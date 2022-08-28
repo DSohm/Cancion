@@ -1,22 +1,116 @@
-*{
-    margin:0;
+*{body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #885353;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* No Scrollbar */
+    overflow: hidden;
+}
+
+.form-box {
+    width: 400px;
+    padding: 40px;
+    background: #837676;
+    text-align: center;
+    border-radius:90px;
+}
+
+.form-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #cf0606;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
+    width: 280px;
+    border-color: #ffffff;
+    
+}
+
+.form-box button[type="submit"] {
+    border: 0;
+    background: #eb5050;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #863939;
+    padding: 14px 40px;
+    outline: none;
+    color: #ffffff;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover {
+    background: rgb(243, 175, 175) ;
+}
+
+body
+
+{
+    margin:15;
 }
 
 .contenedor{
-    background: rgb(212, 160, 212);
-    width: 100vw;
-    height:100vh;
+    background: rgb(243, 102, 102);
+    width: 460vw;
+    height:575vh;
     text-align: center;
 }
 
 p{
-    font-size: xx-large;
-    padding:5%;
+    font-size:x-large;
+    color:white ;
+      font-family:'Open Sans';
+    padding:10px;
 }
 
 button{
     font-size: xx-large;
-    padding: 0.75em;
+    padding:10px;
+}
+
+
+#yesBtn{
+    font-weight:bold;
+    font-size: 200%;
+    transform: translate(-100%,0);
+    cursor: pointer;
+    border-radius: 24px;
+    transition: 0.25s;
+    padding: 1em;
+}
+
+#noBtn{
+    position: absolute;
+    padding: 0.55em;
+    border-radius: 20 px;
+}
 }
 
 #yesBtn{
